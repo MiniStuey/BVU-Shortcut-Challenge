@@ -97,10 +97,15 @@ function renderWeek() {
     <p>${week.shortcut}</p>
 
     <div class="video-placeholder">
-      ${embed
-        ? `<iframe src="${embed}" title="Week ${week.number} challenge video" allowfullscreen></iframe>`
-        : `<span>Add your YouTube link in <code>script.js</code> to show the video here.</span>`
-      }
+      <iframe
+        src="https://www.youtube.com/embed/mmV98A0soY8"
+        title="Week 1 challenge video"
+        width="560"
+        height="315"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
     </div>
 
     <a class="button submit-button" href="${week.form}" target="_blank" rel="noopener">
