@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BVU Shortcut Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="badge">BVU • SHORTCUT CHALLENGE</div>
+      <h1>Master the shortcut.<br><span>Own the leaderboard.</span></h1>
+      <p class="hero-copy">A weekly Mario Kart World time-trial challenge for the BVU team.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#weeks">View Challenges</a>
+        <a class="button secondary" href="#leaderboard">Leaderboard</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="current-section">
+      <div class="section-heading">
+        <p class="eyebrow">CURRENT CHALLENGE</p>
+        <h2 id="currentWeekTitle">Week 1</h2>
+      </div>
+      <div id="currentChallenge" class="featured-card"></div>
+    </section>
+
+    <section id="weeks" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">THE SEASON</p>
+        <h2>Weekly Challenges</h2>
+        <p>Pick a week to see the track, target, shortcut rules, and submission link.</p>
+      </div>
+      <div id="weekTabs" class="week-tabs"></div>
+      <div id="weekContent" class="week-card"></div>
+    </section>
+
+    <section id="leaderboard" class="section leaderboard-section">
+      <div class="section-heading">
+        <p class="eyebrow">WHO'S ON TOP?</p>
+        <h2>Leaderboard</h2>
+        <p>Scores are updated by the captain after submitted runs are verified.</p>
+      </div>
+      <div class="leaderboard-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Place</th>
+              <th>Player</th>
+              <th>Time</th>
+              <th>Points</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboardBody"></tbody>
+        </table>
+      </div>
+      <p class="small-note">Leaderboard data is maintained in <code>script.js</code>. This keeps the first version simple and GitHub Pages-friendly.</p>
+    </section>
+
+    <section class="rules section">
+      <div class="section-heading">
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2>3 points are up for grabs every week.</h2>
+      </div>
+      <div class="rules-grid">
+        <article class="rule-card"><span>01</span><h3>Hit the shortcut</h3><p>Complete the required shortcut successfully on every required lap.</p><strong>+1 point</strong></article>
+        <article class="rule-card"><span>02</span><h3>Beat the target</h3><p>Finish your time trial under the set target time for that week.</p><strong>+1 point</strong></article>
+        <article class="rule-card"><span>03</span><h3>Finish top 3</h3><p>Submit one of the three fastest verified times for the week.</p><strong>+1 point</strong></article>
+      </div>
+      <div class="prize-card">
+        <div>
+          <p class="eyebrow">THE PRIZE</p>
+          <h3>Weekly bragging rights → season-long glory</h3>
+          <p>The player with the most points at the end of the challenge earns the current prize: a Mario Kart LEGO set.</p>
+        </div>
+        <div class="trophy">🏆</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>BVU Shortcut Challenge</strong> • Buena Vista University</p>
+    <p>Built for the team. Driven by shortcuts.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

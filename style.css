@@ -1,0 +1,154 @@
+:root {
+  --navy: #071a35;
+  --navy-2: #0d2b52;
+  --gold: #f2bd2e;
+  --gold-light: #ffe08a;
+  --cream: #fffaf0;
+  --white: #ffffff;
+  --ink: #122033;
+  --muted: #64748b;
+  --line: #dbe3ed;
+  --success: #18794e;
+  --shadow: 0 18px 50px rgba(7, 26, 53, .12);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.55;
+}
+a { color: inherit; }
+.hero {
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 80% 20%, rgba(242,189,46,.30), transparent 28%),
+    linear-gradient(135deg, var(--navy), var(--navy-2));
+  border-bottom: 7px solid var(--gold);
+}
+.hero-inner, main, footer {
+  width: min(1120px, calc(100% - 36px));
+  margin: 0 auto;
+}
+.hero-inner { padding: 90px 0; }
+.badge, .eyebrow {
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: .78rem;
+}
+.badge {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 999px;
+  background: rgba(255,255,255,.07);
+  color: var(--gold-light);
+}
+h1 {
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: .94;
+  margin: 22px 0;
+  max-width: 850px;
+  letter-spacing: -.055em;
+}
+h1 span { color: var(--gold); }
+.hero-copy { max-width: 620px; font-size: 1.15rem; color: #d7e2ef; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 800;
+  border: 2px solid transparent;
+}
+.button.primary { background: var(--gold); color: var(--navy); }
+.button.secondary { border-color: rgba(255,255,255,.4); color: white; }
+
+section { scroll-margin-top: 25px; }
+.current-section { padding: 72px 0 20px; }
+.section { padding: 75px 0; }
+.section-heading { margin-bottom: 28px; }
+.eyebrow { color: #8b6810; margin: 0 0 7px; }
+.section-heading h2 { margin: 0; color: var(--navy); font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.05; }
+.section-heading p:not(.eyebrow) { color: var(--muted); max-width: 700px; }
+
+.featured-card, .week-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.featured-card {
+  padding: 32px;
+  background: linear-gradient(120deg, #fff, #fff8dd);
+}
+.challenge-grid { display: grid; grid-template-columns: 1.4fr .6fr; gap: 28px; align-items: center; }
+.challenge-grid h3 { font-size: clamp(2rem, 5vw, 4rem); line-height: 1; margin: 0 0 12px; color: var(--navy); }
+.challenge-grid p { color: var(--muted); }
+.stat-box { padding: 22px; border-radius: 16px; background: var(--navy); color: white; }
+.stat-box small { color: #bdcce0; display: block; }
+.target { font-size: 2.3rem; color: var(--gold); font-weight: 900; }
+
+.week-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+.week-tab {
+  cursor: pointer; border: 1px solid var(--line); background: white; color: var(--navy);
+  padding: 9px 13px; border-radius: 9px; font-weight: 800;
+}
+.week-tab.active { background: var(--navy); color: var(--gold); border-color: var(--navy); }
+.week-card { padding: 30px; }
+.week-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+.pill { padding: 6px 10px; border-radius: 999px; background: #edf3f9; color: var(--navy); font-weight: 800; font-size: .86rem; }
+.video-placeholder {
+  margin-top: 24px; aspect-ratio: 16/9; background: #e9eef4; border-radius: 14px;
+  display: grid; place-items: center; overflow: hidden;
+}
+.video-placeholder iframe { width: 100%; height: 100%; border: 0; }
+.video-placeholder a { font-weight: 800; color: var(--navy); }
+.submit-button { margin-top: 20px; background: var(--gold); color: var(--navy); }
+
+.leaderboard-section { background: var(--navy); color: white; width: 100%; padding-left: max(18px, calc((100vw - 1120px)/2)); padding-right: max(18px, calc((100vw - 1120px)/2)); }
+.leaderboard-section .section-heading h2 { color: white; }
+.leaderboard-section .section-heading p:not(.eyebrow) { color: #c6d2e0; }
+.leaderboard-wrap { overflow-x: auto; background: white; border-radius: 16px; color: var(--ink); }
+table { width: 100%; border-collapse: collapse; min-width: 600px; }
+th, td { padding: 16px 18px; text-align: left; border-bottom: 1px solid var(--line); }
+th { background: #f1f5f9; color: var(--navy); font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; }
+tr:last-child td { border-bottom: 0; }
+.place { font-weight: 900; color: var(--navy); }
+.points { font-weight: 900; color: #9a6d00; }
+.small-note { color: #9fb0c5; font-size: .85rem; }
+code { background: rgba(255,255,255,.1); padding: 2px 5px; border-radius: 4px; }
+
+.rules-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.rule-card { background: white; border: 1px solid var(--line); padding: 24px; border-radius: 16px; }
+.rule-card span { color: var(--gold); background: var(--navy); border-radius: 8px; padding: 5px 8px; font-weight: 900; }
+.rule-card h3 { margin-bottom: 5px; color: var(--navy); }
+.rule-card p { color: var(--muted); }
+.rule-card strong { color: var(--success); }
+.prize-card {
+  margin-top: 20px; padding: 28px; border-radius: 18px; background: var(--navy); color: white;
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+}
+.prize-card h3 { margin: 0; font-size: 1.5rem; }
+.prize-card p:last-child { color: #c7d4e3; max-width: 700px; }
+.trophy { font-size: 4rem; }
+
+footer { padding: 35px 0 55px; color: var(--muted); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+footer p { margin: 0; }
+
+@media (max-width: 760px) {
+  .challenge-grid, .rules-grid { grid-template-columns: 1fr; }
+  .hero { min-height: auto; }
+  .hero-inner { padding: 70px 0; }
+  h1 { font-size: 3.5rem; }
+  .section { padding: 55px 0; }
+}
