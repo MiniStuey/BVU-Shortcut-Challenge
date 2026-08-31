@@ -97,15 +97,23 @@ function renderWeek() {
     <p>${week.shortcut}</p>
 
     <div class="video-placeholder">
-      <iframe
-        src="https://www.youtube.com/embed/mmV98A0soY8"
-        title="Week 1 challenge video"
-        width="560"
-        height="315"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-      </iframe>
+      ${
+        embed
+          ? `
+            <iframe
+              src="${embed}"
+              title="Week ${week.number} challenge video"
+              width="560"
+              height="315"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          `
+          : `
+            <p>No challenge video has been added for this week yet.</p>
+          `
+      }
     </div>
 
     <a class="button submit-button" href="${week.form}" target="_blank" rel="noopener">
