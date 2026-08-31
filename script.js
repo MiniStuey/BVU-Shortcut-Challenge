@@ -12,19 +12,19 @@
 // the site to Google Sheets / a database for automatic updates.
 
 const weeks = [
-  { number: 1, track: "YOUR TRACK", target: "1:00.000", shortcut: "Describe the shortcut here.", video: "", form: "YOUR_GOOGLE_FORM_URL" },
-  { number: 2, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "YOUR_GOOGLE_FORM_URL" },
-  { number: 3, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "YOUR_GOOGLE_FORM_URL" },
-  { number: 4, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "YOUR_GOOGLE_FORM_URL" },
-  { number: 5, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "YOUR_GOOGLE_FORM_URL" },
-  { number: 6, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "YOUR_GOOGLE_FORM_URL" },
-  { number: 7, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "YOUR_GOOGLE_FORM_URL" },
-  { number: 8, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "YOUR_GOOGLE_FORM_URL" },
-  { number: 9, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "YOUR_GOOGLE_FORM_URL" },
-  { number: 10, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "YOUR_GOOGLE_FORM_URL" },
-  { number: 11, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "YOUR_GOOGLE_FORM_URL" },
-  { number: 12, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "YOUR_GOOGLE_FORM_URL" },
-  { number: 13, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "YOUR_GOOGLE_FORM_URL" }
+  { number: 1, track: "YOUR TRACK", target: "1:00.000", shortcut: "Describe the shortcut here.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
+  { number: 2, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
+  { number: 3, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
+  { number: 4, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
+  { number: 5, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
+  { number: 6, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
+  { number: 7, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
+  { number: 8, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
+  { number: 9, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
+  { number: 10, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
+  { number: 11, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
+  { number: 12, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
+  { number: 13, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" }
 ];
 
 // Replace this with your real verified leaderboard.
