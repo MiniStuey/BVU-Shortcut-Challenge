@@ -38,12 +38,15 @@
       <div id="weekContent" class="week-card"></div>
     </section>
 
-    <section id="leaderboard" class="section leaderboard-section">
-      <div class="section-heading">
-        <p class="eyebrow">WHO'S ON TOP?</p>
-        <h2>Leaderboard</h2>
-        <p>Scores are updated by the captain after submitted runs are verified.</p>
+    <div class="leaderboard-panel">
+      <div class="leaderboard-title">
+        <span class="leaderboard-icon">⏱️</span>
+        <div>
+          <h3>Time Trial</h3>
+          <p>Fastest verified times</p>
+        </div>
       </div>
+
       <div class="leaderboard-wrap">
         <table>
           <thead>
@@ -51,14 +54,41 @@
               <th>Place</th>
               <th>Player</th>
               <th>Time</th>
+            </tr>
+          </thead>
+          <tbody id="timeLeaderboardBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <!-- POINTS LEADERBOARD -->
+    <div class="leaderboard-panel">
+      <div class="leaderboard-title">
+        <span class="leaderboard-icon">🏆</span>
+        <div>
+          <h3>Season Points</h3>
+          <p>Total Shortcut Challenge points</p>
+        </div>
+      </div>
+
+      <div class="leaderboard-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Place</th>
+              <th>Player</th>
               <th>Points</th>
             </tr>
           </thead>
-          <tbody id="leaderboardBody"></tbody>
+          <tbody id="pointsLeaderboardBody"></tbody>
         </table>
       </div>
-    </section>
+    </div>
 
+  </div>
+</section>
+    
     <section class="rules section">
       <div class="section-heading">
         <p class="eyebrow">HOW IT WORKS</p>
