@@ -123,22 +123,78 @@ function renderWeek() {
 }
 
 function renderLeaderboard() {
-  const body = document.getElementById("leaderboardBody");
-  const sorted = [...leaderboardData].sort((a, b) => b.points - a.points);
 
-  if (!sorted.length) {
-    body.innerHTML = `<tr><td colspan="4">No verified runs have been entered yet. The leaderboard will appear here once you add players in script.js.</td></tr>`;
-    return;
+  // =========================
+  // TIME TRIAL LEADERBOARD
+  // =========================
+
+  const timeBody = document.getElementById("timeLeaderboardBody");
+
+  // Sort fastest time first
+  const timeSorted = [...leaderboardData].sort((a, b) => {
+    return timeToMilliseconds(a.time) - timeToMilliseconds(b.time);
+  });
+
+  if (!timeSorted.length) {
+    timeBody.innerHTML = `
+      <tr>
+        <td colspan="3">
+          No verified times yet.
+        </td>
+      </tr>
+    `;
+  } else {
+    timeBody.innerHTML = timeSorted.map((player, index) => `
+      <tr>
+        <td class="place">${index + 1}</td>
+        <td><strong>${player.name}</strong></td>
+        <td>${player.time}</td>
+      </tr>
+    `).join("");
   }
 
-  body.innerHTML = sorted.map((player, index) => `
-    <tr>
-      <td class="place">${index + 1}</td>
-      <td><strong>${player.name}</strong></td>
-      <td>${player.time}</td>
-      <td class="points">${player.points}</td>
-    </tr>
-  `).join("");
+
+  // =========================
+  // POINTS LEADERBOARD
+  // =========================
+
+  const pointsBody = document.getElementById("pointsLeaderboardBody");
+
+  // Sort highest points first
+  const pointsSorted = [...leaderboardData].sort((a, b) => {
+    return b.points - a.points;
+  });
+
+  if (!pointsSorted.length) {
+    pointsBody.innerHTML = `
+      <tr>
+        <td colspan="3">
+          No points have been awarded yet.
+        </td>
+      </tr>
+    `;
+  } else {
+    pointsBody.innerHTML = pointsSorted.map((player, index) => `
+      <tr>
+        <td class="place">${index + 1}</td>
+        <td><strong>${player.name}</strong></td>
+        <td class="points">${player.points}</td>
+      </tr>
+    `).join("");
+  }
+}
+
+
+// Convert a Mario Kart time such as 2:30.456
+// into milliseconds so JavaScript can compare times.
+function timeToMilliseconds(time) {
+
+  const parts = time.split(":");
+
+  const minutes = parseInt(parts[0]);
+  const seconds = parseFloat(parts[1]);
+
+  return (minutes * 60 + seconds) * 1000;
 }
 
 function selectWeek(number) {
