@@ -13,7 +13,7 @@
 
 const weeks = [
   { number: 1, track: "Bowser's Castle", target: "2:30.000", shortcut: "The shortcut this week is about the main rail shortcut in the video. The secondary shortcut isn't required for the shortcut point, but it may come in handy when getting around to the time requirement. If you want to see my pb, my switch friend code is SW-6765-3665-2884, and my pb is 2:22.112. Good Luck!", video: "https://www.youtube.com/watch?v=mmV98A0soY8", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
-  { number: 2, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
+  { number: 2, track: "Ghost Valley 1", target: "2:00.000", shortcut: "This shortcut is about the first two pole jumps, the tree and final shroom cut aren't required for the shortcut point, but will be for the time trial. My PB is in the video and is 1:55.496", video: "https://www.youtube.com/watch?v=CphQ7NfZWbs", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
   { number: 3, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
   { number: 4, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
   { number: 5, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
@@ -32,8 +32,11 @@ const weeks = [
 // "points" is the player's total season score.
 const leaderboardData = [
   // { name: "Player Name", time: "1:23.456", points: 0 },
+  { name: "Matthew", time: "2:25.542", points: 3},
   { name: "Ian", time: "2:27.964", points: 3},
-  { name: "Matthew", time: "2:30.000", points: 3}
+  { name: "Gavin", time: "2:28:167", 
+  { name: "Joseph", time: "2:33.767", points: 0},
+  { name: "Gregory", time: "2:22.112", points: 0}
 ];
 
 let selectedWeek = 1;
