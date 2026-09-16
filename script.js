@@ -32,17 +32,11 @@ const weeks = [
 // "points" is the player's total season score.
 const leaderboardData = [
   // { name: "Player Name", time: "1:23.456", points: 0 },
-  { name: "Matthew", time: "2:25.542", points: 3},
-  { name: "Ian", time: "2:27.964", points: 3},
-  { name: "Gavin", time: "2:28.167", points: 3},
-  { name: "Rhyann", time: "2:28.393", points: 2},
-  { name: "Nic", time: "2:32.474", points: 1},
-  { name: "Mckenzie", time: "4:16.271", points: 0},
-  { name: "Joseph", time: "2:33.767", points: 0},
-  { name: "Gregory", time: "2:22.112", points: 0}
+  { name: "Gregory", time: "1:55.496", points: 0 },
+  { name: "Gavin", time: "2:00:618", points: 2 }
 ];
 
-let selectedWeek = 1;
+let selectedWeek = 2;
 
 function youtubeEmbed(url) {
   if (!url) return "";
