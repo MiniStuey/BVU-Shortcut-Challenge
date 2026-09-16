@@ -35,6 +35,8 @@ const leaderboardData = [
   { name: "Matthew", time: "2:25.542", points: 3},
   { name: "Ian", time: "2:27.964", points: 3},
   { name: "Gavin", time: "2:28.167", points: 3},
+  { name: "Rhyann", time: "2:28.393", points: 2},
+  { name: "Nic", time: "2:32.474", points: 1},
   { name: "Mckenzie", time: "4:16.271", points: 0},
   { name: "Joseph", time: "2:33.767", points: 0},
   { name: "Gregory", time: "2:22.112", points: 0}
