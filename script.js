@@ -33,11 +33,13 @@ const weeks = [
 const leaderboardData = [
   // { name: "Player Name", time: "1:23.456", points: 0 },
   { name: "Gregory", time: "1:55.496", points: 0 },
+  { name: "Matthew", time: "1:54.705", points: 3 },
   { name: "Rhyann", time: "1:55.072", points: 3 },
   { name: "Ian", time: "1:55.529", points: 3 },
-  { name: "Gavin", time: "1:56.813", points: 3 },
+  { name: "Gavin", time: "1:56.813", points: 2 },
   { name: "Mckenzie", time: "2:06.774", points: 0},
   { name: "Joseph", time: "2:09.811", points: 0},
+  { name: "Nic", time: "2:10.000", points: 0 },
 ];
 
 let selectedWeek = 3;
