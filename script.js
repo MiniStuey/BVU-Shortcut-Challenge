@@ -16,7 +16,7 @@ const weeks = [
   { number: 2, track: "Ghost Valley 1", target: "2:00.000", shortcut: "This shortcut is about the first two pole jumps, the tree and final shroom cut aren't required for the shortcut point, but will be for the time trial. My PB is in the video and is 1:55.496", video: "https://www.youtube.com/watch?v=CphQ7NfZWbs", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
   { number: 3, track: "Salty Salty Speedway", target: "2:12.500", shortcut: "This shortcut is about the glider and shroom rail cut, the first wall ride isn't required. My pb is 2:08.121", video: "https://www.youtube.com/watch?v=Wv0232mOL6o", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
   { number: 4, track: "Shy Guy Bazaar", target: "2:07.000", shortcut: "This shortcut is the starting rail cut, the secondary rail cut is good but ISN'T required, my pb is 1:59.068, no video yet will be done when I get back to my dorm", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
-  { number: 5, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
+  { number: 5, track: "Wario Shipyard", target: "2:35.000", shortcut: "This shortcut is the first tree cut, and you just have to make it save time. The second cut isn't required. My pb is 2:30.195", video: "https://www.youtube.com/watch?v=LxAGn7pvGIM", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
   { number: 6, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
   { number: 7, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
   { number: 8, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
@@ -37,7 +37,7 @@ const leaderboardData = [
   { name: "Gavin", time: "2:05:101", points: 3 },
 ];
 
-let selectedWeek = 4;
+let selectedWeek = 5;
 
 function youtubeEmbed(url) {
   if (!url) return "";
