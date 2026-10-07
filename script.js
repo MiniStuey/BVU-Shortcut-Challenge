@@ -33,6 +33,8 @@ const weeks = [
 const leaderboardData = [
   // { name: "Player Name", time: "1:23.456", points: 0 },
   { name: "Gregory", time: "1:59.068", points: 0 },
+  { name: "Matthew", time: "1:57.061", points: 3 },
+  { name: "Gavin", time: "2:05:101", points: 3 },
 ];
 
 let selectedWeek = 4;
