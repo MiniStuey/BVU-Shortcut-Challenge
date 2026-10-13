@@ -17,7 +17,7 @@ const weeks = [
   { number: 3, track: "Salty Salty Speedway", target: "2:12.500", shortcut: "This shortcut is about the glider and shroom rail cut, the first wall ride isn't required. My pb is 2:08.121", video: "https://www.youtube.com/watch?v=Wv0232mOL6o", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
   { number: 4, track: "Shy Guy Bazaar", target: "2:07.000", shortcut: "This shortcut is the starting rail cut, the secondary rail cut is good but ISN'T required, my pb is 1:59.068, no video yet will be done when I get back to my dorm", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
   { number: 5, track: "Wario Shipyard", target: "2:35.000", shortcut: "This shortcut is the first tree cut, and you just have to make it save time. The second cut isn't required. My pb is 2:30.195", video: "https://www.youtube.com/watch?v=LxAGn7pvGIM", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
-  { number: 6, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
+  { number: 6, track: "Whistlestop Summit", target: "2:02.000", shortcut: "This shortcut is HARD. The goal is to go from the rail to the upper path shroomless. There is a consistent setup, but it is tough. If you want it explained then don't be afraid to dm me. My pb is a 1:56.316", video: "https://www.youtube.com/watch?v=rHSLcVpUCFs", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
   { number: 7, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
   { number: 8, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
   { number: 9, track: "TBD", target: "TBD", shortcut: "Challenge details coming soon.", video: "", form: "https://docs.google.com/forms/d/e/1FAIpQLScjSjIpSUgIi5RLaqKbGGr9o9Uo4SX9meJc1sVMq0MqcC5tjQ/viewform?usp=publish-editor" },
@@ -32,9 +32,9 @@ const weeks = [
 // "points" is the player's total season score.
 const leaderboardData = [
   // { name: "Player Name", time: "1:23.456", points: 0 },
-  { name: "Gregory", time: "1:59.068", points: 0 },
-  { name: "Matthew", time: "1:57.061", points: 3 },
-  { name: "Gavin", time: "2:05:101", points: 3 },
+  { name: "Gregory", time: "2:30.195", points: 0 },
+  { name: "Joseph", time: "2:38.666", points: 2 },
+  { name: "Gavin", time: "2:41:167", points: 2 },
 ];
 
 let selectedWeek = 5;
