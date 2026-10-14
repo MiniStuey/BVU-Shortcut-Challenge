@@ -32,9 +32,11 @@ const weeks = [
 // "points" is the player's total season score.
 const leaderboardData = [
   // { name: "Player Name", time: "1:23.456", points: 0 },
+  { name: "Matthew", time: "2:28.585", points: 3 },
   { name: "Gregory", time: "2:30.195", points: 0 },
+  { name: "Rhyann", time: "2:33.899", points: 3 },
   { name: "Joseph", time: "2:38.666", points: 2 },
-  { name: "Gavin", time: "2:41:167", points: 2 },
+  { name: "Gavin", time: "2:41:167", points: 1 },
 ];
 
 let selectedWeek = 5;
